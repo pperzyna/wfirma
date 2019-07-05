@@ -79,10 +79,6 @@ class Model
             return $value;
         }
 
-        if (is_subclass_of($type, Model::class)) {
-            return new $type($value);
-        }
-
         switch ($type) {
             case 'int':
             case 'integer':
